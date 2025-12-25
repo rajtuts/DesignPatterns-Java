@@ -181,38 +181,3 @@ class WhatsAppNotification implements Notification {
 * `NotificationService`
 * Existing notification classes
 
----
-
-# 🔁 Mapping to Your Original Example
-
-| Original Example | This Example        |
-| ---------------- | ------------------- |
-| Shape            | Notification        |
-| Cuboid / Cone    | Email / SMS / Push  |
-| volume()         | send()              |
-| VolumeCalculator | NotificationService |
-| if–else checks   | Polymorphism        |
-
----
-
-## Key Takeaways (Interview-Ready)
-
-* OCP prevents **if–else explosion**
-* Core logic remains **stable**
-* New features are added via **new classes**
-* Achieved using:
-
-  * Interfaces / abstract classes
-  * Polymorphism
-  * Dependency Injection
-
----
-
-If you want, I can also:
-
-* Rewrite this in **Spring Boot style**
-* Show **real enterprise use cases** (payment, tax, discount rules)
-* Convert this into **interview Q&A**
-* Create **UML diagrams / flowcharts**
-
-Just tell me 👍
