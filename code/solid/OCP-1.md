@@ -1,8 +1,4 @@
-Here’s the **same Open–Closed Principle (OCP)** explained with a **completely different, real-world example**—no boxes, no volume—so the concept becomes crystal clear.
-
----
-
-## SOLID – Open Closed Principle (OCP)
+# SOLID – Open Closed Principle (OCP)
 
 > **“Software entities should be open for extension but closed for modification.”**
 > — Bertrand Meyer
