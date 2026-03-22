@@ -1,5 +1,50 @@
 ## 📘 Microservices Patterns
 
+Here is the **Microservices Design Patterns + Tools/Frameworks (Java Spring Boot) – Interview Table**
+
+---
+
+# Microservices Design Patterns – With Tools (Spring Boot)
+
+| Pattern                          | Explanation (Interview Answer)                                          | Tools / Frameworks (Spring Boot) |
+| -------------------------------- | ----------------------------------------------------------------------- | -------------------------------- |
+| Decomposition Patterns |
+| Decompose by Business Capability | Split services based on business functions like Orders, Payments, Users | DDD, Spring Boot                 |
+| Decompose by Subdomain           | Split services based on bounded contexts                                | DDD, Spring Boot                 |
+| Decompose by Transactions        | Each service handles a specific business transaction                    | Spring Boot                      |
+| Strangler Pattern                | Gradually replace monolith with microservices                           | Spring Boot, API Gateway         |
+| Bulkhead Pattern                 | Isolate services so failure in one does not affect others               | Resilience4j                     |
+| Sidecar Pattern                  | Helper service for logging/monitoring                                   | Kubernetes, Istio                |
+| Database Patterns |
+| Shared Database per Service      | Multiple services share same DB                                         | Not recommended                  |
+| Database per Service             | Each service has its own database                                       | Spring Data JPA, Hibernate       |
+| CQRS                             | Separate read and write operations                                      | Axon Framework                   |
+| Event Sourcing                   | Store state as sequence of events                                       | Axon, Kafka                      |
+| Saga Pattern                     | Manage distributed transactions                                         | Axon, Kafka, Eventuate           |
+| Observability Patterns |
+| Log Aggregation                  | Collect logs in one place                                               | ELK Stack                        |
+| Performance Metrics              | Monitor CPU, memory, response time                                      | Prometheus, Grafana              |
+| Distributed Tracing              | Track request across services                                           | Zipkin, Jaeger, Sleuth           |
+| Health Check                     | Service health endpoint                                                 | Spring Boot Actuator             |
+| Integration Patterns |
+| API Gateway                      | Single entry point                                                      | Spring Cloud Gateway             |
+| Aggregator Pattern               | Combine responses from services                                         | Spring Boot                      |
+| Proxy Pattern                    | Service calls another service                                           | OpenFeign                        |
+| Client-Side UI Composition       | UI combines multiple services                                           | Angular/React                    |
+| Branched Pattern                 | Parallel service calls                                                  | CompletableFuture, WebFlux       |
+| Chained Microservice Pattern     | Sequential service calls                                                | Feign, RestTemplate              |
+| Gateway Routing Pattern          | Gateway routes to services                                              | Spring Cloud Gateway             |
+| Cross-Cutting Concern Patterns |
+| External Configuration           | Config outside service                                                  | Spring Cloud Config              |
+| Service Discovery                | Services find each other                                                | Eureka                           |
+| Circuit Breaker                  | Stop calling failing service                                            | Resilience4j                     |
+| Blue-Green Deployment            | Deploy without downtime                                                 | Kubernetes                       |
+
+---
+
+
+
+
 | S.No | Importance | Category      | Pattern Name                     | Pattern Description                               | Spring Boot Library / Tool |
 | ---: | ---------- | ------------- | -------------------------------- | ------------------------------------------------- | -------------------------- |
 |    1 | 🔴         | Design        | Decompose by Business Capability | Split services based on business functions        | Spring Boot + DDD          |
